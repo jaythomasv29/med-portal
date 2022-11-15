@@ -1,4 +1,4 @@
-package com.kaiser.demo;
+package com.healthportal.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
