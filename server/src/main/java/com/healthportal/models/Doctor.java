@@ -6,8 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 import java.util.List;
 
 
@@ -15,14 +14,26 @@ import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
+@Table(name = "Doctors")
 public class Doctor {
     // fields go here
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "doctor_id")
     private String doctor_id;
+
+    @Column(name = "email", unique = true)
+    private String email;
+
+    @OneToMany(cascade = CascadeType.PERSIST)
     private List<Patient> patientList;
 
     public Doctor(){}

@@ -16,6 +16,7 @@ public class DoctorDTO {
     private String firstName;
     private String lastName;
     private String doctor_id;
+    private String email;
     private List<Patient> patientList;
 
     public DoctorDTO(Doctor doctor){
@@ -26,7 +27,7 @@ public class DoctorDTO {
         this.patientList = doctor.getPatientList();
     }
 
-    
+
 
 
 
