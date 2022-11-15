@@ -1,6 +1,4 @@
-package com.healthportal.demo.models;
-
-import java.util.List;
+package com.healthportal.models;
 
 public class Appointment {
 

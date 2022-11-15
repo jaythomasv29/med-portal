@@ -1,4 +1,4 @@
-package com.healthportal.demo.models;
+package com.healthportal.models;
 
 import javax.print.Doc;
 import java.util.List;

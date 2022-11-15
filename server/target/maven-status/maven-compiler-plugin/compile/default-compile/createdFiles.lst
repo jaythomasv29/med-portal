@@ -1,2 +1,6 @@
-com/healthportal/demo/AppController.class
-com/healthportal/demo/HealthCareApplication.class
+com/healthportal/models/Patient.class
+com/healthportal/models/Doctor.class
+com/healthportal/models/Appointment.class
+com/healthportal/AppController.class
+com/healthportal/models/Prescription.class
+com/healthportal/HealthCareApplication.class
