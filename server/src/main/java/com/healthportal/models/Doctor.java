@@ -4,6 +4,10 @@ import com.healthportal.dtos.DoctorDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.List;
 
 
@@ -13,6 +17,8 @@ import java.util.List;
 @AllArgsConstructor
 public class Doctor {
     // fields go here
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String firstName;
     private String lastName;
