@@ -1,5 +1,6 @@
 package com.healthportal.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,9 @@ public class Patient {
     private String gender;
     private String phone;
     private String password;
+    @ManyToOne
+    @JsonBackReference
+    private Doctor doctor;
     private Doctor assignedDoctor;
     private List<Prescription> medicines;
 }
