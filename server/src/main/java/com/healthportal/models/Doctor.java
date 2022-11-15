@@ -1,4 +1,4 @@
-package com.healthportal.demo.models;
+package com.healthportal.models;
 
 public class Doctor {
     // fields go here

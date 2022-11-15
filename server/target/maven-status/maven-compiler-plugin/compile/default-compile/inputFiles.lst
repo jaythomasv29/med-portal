@@ -1,2 +1,6 @@
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/demo/HealthCareApplication.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/demo/AppController.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Prescription.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Doctor.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/AppController.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Patient.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/HealthCareApplication.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Appointment.java

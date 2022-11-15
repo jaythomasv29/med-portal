@@ -1,4 +1,4 @@
-package com.healthportal.demo;
+package com.healthportal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.healthportal.demo;
+package com.healthportal;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
