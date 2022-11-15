@@ -6,7 +6,6 @@ import com.healthportal.exceptions.UserExistsException;
 import java.util.List;
 
 public interface DoctorService {
-
     List<DoctorDTO> getAllDoctors();
     DoctorDTO findDoctorById(long id);
     DoctorDTO deleteDoctorById(long id);
