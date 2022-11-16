@@ -1,6 +1,7 @@
 package com.healthportal.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.healthportal.dtos.AppointmentDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -46,4 +47,25 @@ public class Appointment {
     //confirmed or not confirmed
     private String status;
 
+    public Appointment(AppointmentDTO appointmentDto){
+
+        if (appointmentDto.getDepartment() != null){
+            this.department = appointmentDto.getDepartment();
+        }
+        if (appointmentDto.getRDate() != null){
+            this.rDate = appointmentDto.getRDate();
+        }
+
+        if (appointmentDto.getRTime() != null){
+            this.rTime = appointmentDto.getRTime();
+        }
+
+        if (appointmentDto.getAppcategory() != null){
+            this.appcategory = appointmentDto.getAppcategory();
+        }
+
+        if (appointmentDto.getStatus() != null){
+            this.status = appointmentDto.getStatus();
+        }
+    }
 }
