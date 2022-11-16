@@ -1,6 +1,15 @@
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/dtos/PatientDto.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/service/PatientService.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/AppController.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/HealthCareApplication.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/ErrorDetails.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/dtos/DoctorDTO.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/GlobalExceptionHandler.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/configuration/MapStructMapper.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/repository/PatientRepository.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/ResourceNotFoundException.java
 /Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Prescription.java
 /Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Doctor.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/AppController.java
 /Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Patient.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/HealthCareApplication.java
+/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/service/PatientServiceImpl.java
 /Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Appointment.java

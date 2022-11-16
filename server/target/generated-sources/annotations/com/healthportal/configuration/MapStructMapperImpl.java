@@ -1,5 +1,6 @@
 package com.healthportal.configuration;
 
+<<<<<<< HEAD
 import com.healthportal.dtos.AppointmentDTO;
 import com.healthportal.dtos.DoctorDTO;
 import com.healthportal.dtos.PatientDTO;
@@ -10,13 +11,22 @@ import com.healthportal.models.Patient;
 import com.healthportal.models.Prescription;
 import java.util.ArrayList;
 import java.util.List;
+=======
+import com.healthportal.dtos.DoctorDTO;
+import com.healthportal.models.Doctor;
+>>>>>>> origin/main
 import javax.annotation.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
+<<<<<<< HEAD
     date = "2022-11-15T16:32:48-0500",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
+=======
+    date = "2022-11-15T16:41:36-0800",
+    comments = "version: 1.4.1.Final, compiler: javac, environment: Java 19 (Homebrew)"
+>>>>>>> origin/main
 )
 @Component
 public class MapStructMapperImpl implements MapStructMapper {
@@ -33,11 +43,14 @@ public class MapStructMapperImpl implements MapStructMapper {
         doctorDTO.setFirstName( doctor.getFirstName() );
         doctorDTO.setLastName( doctor.getLastName() );
         doctorDTO.setDoctor_id( doctor.getDoctor_id() );
+<<<<<<< HEAD
         doctorDTO.setEmail( doctor.getEmail() );
         List<Patient> list = doctor.getPatientList();
         if ( list != null ) {
             doctorDTO.setPatientList( new ArrayList<Patient>( list ) );
         }
+=======
+>>>>>>> origin/main
 
         return doctorDTO;
     }
@@ -54,6 +67,7 @@ public class MapStructMapperImpl implements MapStructMapper {
         doctor.setFirstName( doctorDTO.getFirstName() );
         doctor.setLastName( doctorDTO.getLastName() );
         doctor.setDoctor_id( doctorDTO.getDoctor_id() );
+<<<<<<< HEAD
         doctor.setEmail( doctorDTO.getEmail() );
         List<Patient> list = doctorDTO.getPatientList();
         if ( list != null ) {
@@ -128,4 +142,9 @@ public class MapStructMapperImpl implements MapStructMapper {
 
         return appointment;
     }
+=======
+
+        return doctor;
+    }
+>>>>>>> origin/main
 }

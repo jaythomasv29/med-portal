@@ -1,21 +1,50 @@
 package com.healthportal.models;
 
-import org.springframework.data.annotation.Id;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Appointments")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Appointment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String Department;
+    private Long id;
 
-    @Column(name = "patient_id")
+    @ManyToOne
+    @JoinColumn(name = "doctor_id", referencedColumnName = "id")
+    @JsonBackReference
+    private Doctor doctor;
+
+    @ManyToOne
+    @JoinColumn(name = "patient_id", referencedColumnName = "id")
+    @JsonBackReference
     private Patient patient;
 
-    @Column(name = "doctor_id")
-    private Doctor doctor;
+    @Column
+    private String Department;
+
+    @Column
+    private java.sql.Date rDate;
+
+    @Column
+    private java.sql.Time rTime;
+
+    @Column
+    //Could be new patient or following up appointment
+    private String appcategory;
+
+    @Column
+    //confirmed or not confirmed
+    private String status;
+
 
 }
