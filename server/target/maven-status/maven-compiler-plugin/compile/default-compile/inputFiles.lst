@@ -1,15 +1,28 @@
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/dtos/PatientDto.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/service/PatientService.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/AppController.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/HealthCareApplication.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/ErrorDetails.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/dtos/DoctorDTO.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/GlobalExceptionHandler.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/configuration/MapStructMapper.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/repository/PatientRepository.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/exceptions/ResourceNotFoundException.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Prescription.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Doctor.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Patient.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/service/PatientServiceImpl.java
-/Users/jamesvongampai/Desktop/med-portal/server/src/main/java/com/healthportal/models/Appointment.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/HealthCareApplication.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/repository/PrescriptionRepository.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/models/Prescription.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/Impl/DoctorServiceImpl.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/repository/PatientRepository.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/models/Patient.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/models/Appointment.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/Impl/PatientServiceImpl.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/exceptions/UserExistsException.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/exceptions/ErrorDetails.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/controllers/DoctorController.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/PrescriptionService.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/Impl/PrescriptionServiceImpl.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/Impl/AppointmentServiceImpl.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/configuration/MapStructMapper.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/dtos/AppointmentDTO.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/PatientService.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/models/Doctor.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/dtos/DoctorDTO.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/DoctorService.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/AppController.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/repository/DoctorRepository.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/dtos/PrescriptionDTO.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/dtos/PatientDTO.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/repository/AppointmentRepository.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/exceptions/GlobalExceptionHandler.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/services/AppointmentService.java
+/Users/valzhina/Documents/BackToSchool_2022/WalmartHackbright_Fall/Health Portal App/med-portal/server/src/main/java/com/healthportal/exceptions/ResourceNotFoundException.java

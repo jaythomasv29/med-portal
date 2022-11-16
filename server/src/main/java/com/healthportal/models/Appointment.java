@@ -30,7 +30,7 @@ public class Appointment {
     private Patient patient;
 
     @Column
-    private String Department;
+    private String department;
 
     @Column
     private java.sql.Date rDate;

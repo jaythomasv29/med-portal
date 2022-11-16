@@ -10,11 +10,12 @@ import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
+public class PatientDTO {
     @Data
     @Getter
     @NoArgsConstructor
     @AllArgsConstructor
-public class PatientDto {
+    public class PatientDto {
         private Long id;
         private String firstName;
         private String lastName;
@@ -27,3 +28,4 @@ public class PatientDto {
         private List<Prescription> medicines = new ArrayList<>();
         private List<Appointment> appointments = new ArrayList<>();
     }
+}

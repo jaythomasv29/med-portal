@@ -1,7 +1,7 @@
 package com.healthportal.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.healthportal.dtos.PatientDto;
+import com.healthportal.dtos.PatientDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -58,7 +58,7 @@ public class Patient {
     @JsonBackReference
     private List<Appointment> appointmentSet = new ArrayList<>();
 
-    public Patient(PatientDto patientDto) {
+    public Patient(PatientDTO patientDto) {
         this.firstName = patientDto.getFirstName();
         this.lastName = patientDto.getLastName();
         this.email = patientDto.getEmail();
