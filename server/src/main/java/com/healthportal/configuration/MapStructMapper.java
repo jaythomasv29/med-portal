@@ -2,6 +2,7 @@ package com.healthportal.configuration;
 
 import com.healthportal.dtos.DoctorDTO;
 import com.healthportal.models.Doctor;
+import org.hibernate.metamodel.model.domain.spi.MapPersistentAttribute;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Component;

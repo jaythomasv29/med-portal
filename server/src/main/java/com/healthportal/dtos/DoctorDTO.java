@@ -16,19 +16,13 @@ public class DoctorDTO {
     private String firstName;
     private String lastName;
     private String doctor_id;
-    private List<Patient> patientList;
+//    private List<Patient> patientList;
 
     public DoctorDTO(Doctor doctor){
         this.id = doctor.getId();
         this.firstName = doctor.getFirstName();
         this.lastName = doctor.getLastName();
         this.doctor_id = doctor.getDoctor_id();
-        this.patientList = doctor.getPatientList();
+//        this.patientList = doctor.getPatientList();
     }
-
-    
-
-
-
-
 }

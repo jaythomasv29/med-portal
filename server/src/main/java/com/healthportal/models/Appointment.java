@@ -20,10 +20,12 @@ public class Appointment {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "doctor_id", referencedColumnName = "id")
     @JsonBackReference
     private Doctor doctor;
 
     @ManyToOne
+    @JoinColumn(name = "patient_id", referencedColumnName = "id")
     @JsonBackReference
     private Patient patient;
 
@@ -43,4 +45,6 @@ public class Appointment {
     @Column
     //confirmed or not confirmed
     private String status;
+
+
 }
