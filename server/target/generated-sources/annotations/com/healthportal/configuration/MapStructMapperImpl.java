@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-15T15:05:46-0500",
+    date = "2022-11-15T16:32:48-0500",
     comments = "version: 1.4.1.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 @Component
@@ -33,6 +33,7 @@ public class MapStructMapperImpl implements MapStructMapper {
         doctorDTO.setFirstName( doctor.getFirstName() );
         doctorDTO.setLastName( doctor.getLastName() );
         doctorDTO.setDoctor_id( doctor.getDoctor_id() );
+        doctorDTO.setEmail( doctor.getEmail() );
         List<Patient> list = doctor.getPatientList();
         if ( list != null ) {
             doctorDTO.setPatientList( new ArrayList<Patient>( list ) );
@@ -53,6 +54,7 @@ public class MapStructMapperImpl implements MapStructMapper {
         doctor.setFirstName( doctorDTO.getFirstName() );
         doctor.setLastName( doctorDTO.getLastName() );
         doctor.setDoctor_id( doctorDTO.getDoctor_id() );
+        doctor.setEmail( doctorDTO.getEmail() );
         List<Patient> list = doctorDTO.getPatientList();
         if ( list != null ) {
             doctor.setPatientList( new ArrayList<Patient>( list ) );

@@ -33,6 +33,7 @@ public class Doctor {
     @Column(name = "email", unique = true)
     private String email;
 
+
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Patient> patientList;
 
