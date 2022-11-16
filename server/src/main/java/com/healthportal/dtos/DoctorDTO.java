@@ -17,6 +17,7 @@ public class DoctorDTO {
     private String lastName;
     private String doctor_id;
 //    private List<Patient> patientList;
+    private String email;
 
     public DoctorDTO(Doctor doctor){
         this.id = doctor.getId();

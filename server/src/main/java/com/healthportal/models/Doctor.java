@@ -22,9 +22,20 @@ public class Doctor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "doctor_id")
     private String doctor_id;
+
+    @Column(name = "email", unique = true)
+    private String email;
+
 
 
 //    private List<Patient> patientList;
@@ -35,12 +46,6 @@ public class Doctor {
 
 
 
-//    public Doctor(String firstName, String lastName, String doctor_id, List<Patient> patientList){
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.doctor_id = doctor_id;
-//        this.patientList = patientList;
-//    }
 
     public Doctor(DoctorDTO doctorDTO){
         this.firstName = doctorDTO.getFirstName();

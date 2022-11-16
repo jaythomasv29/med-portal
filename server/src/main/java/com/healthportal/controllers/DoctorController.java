@@ -33,7 +33,7 @@ public class DoctorController {
         return new ResponseEntity<DoctorDTO>(doctorServiceImpl.deleteDoctorById(id), HttpStatus.OK);
     }
 
-    @PostMapping("{/save}")
+    @PostMapping("/{save}")
     public ResponseEntity<DoctorDTO> saveDoctor(@RequestBody DoctorDTO doctorDTO) throws UserExistsException {
         return new ResponseEntity<DoctorDTO>(doctorServiceImpl.saveDoctor(doctorDTO), HttpStatus.CREATED);
     }
