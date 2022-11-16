@@ -46,5 +46,4 @@ public class Appointment {
     //confirmed or not confirmed
     private String status;
 
-
 }
