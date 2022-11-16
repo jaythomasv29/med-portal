@@ -7,10 +7,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AppointmentService {
+    List<AppointmentDTO> getAllRequestsByPatientId(Long patientId);
 
-    List<AppointmentDTO> getAllAppointmentsByPatientId(Long patientId);
-
-    List<AppointmentDTO> getAllAppointmentsByDoctorId(Long doctorId);
+    List<AppointmentDTO> getAllRequestsByDoctorId(Long doctorId);
 
     @Transactional
     void addAppointment(AppointmentDTO appointmentDto, Long patientId);
@@ -21,8 +20,8 @@ public interface AppointmentService {
     void deleteAppointmentById(Long appointmentId);
 
     @Transactional
-    void updateAppointmentById(AppointmentDTO appointmentDto);
+    void changeStatusAppointmentById(Long appointmentId);
 
     @Transactional
-    void changeStatusAppointmentById(Long appointmentId);
+    void updateAppointmentById(AppointmentDTO appointmentDto);
 }

@@ -7,7 +7,6 @@ import com.healthportal.models.Doctor;
 import com.healthportal.repository.AppointmentRepository;
 import com.healthportal.repository.DoctorRepository;
 import com.healthportal.repository.PatientRepository;
-import com.healthportal.services.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +15,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-public class AppointmentServiceImpl implements AppointmentService {
+public class AppointmentServiceImpl implements com.healthportal.services.AppointmentService {
     @Autowired
     private PatientRepository patientRepository;
     @Autowired
