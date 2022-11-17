@@ -1,7 +1,6 @@
 package com.healthportal.controllers;
 
 import com.healthportal.dtos.AppointmentDTO;
-import com.healthportal.dtos.PatientDTO;
 import com.healthportal.services.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +15,7 @@ public class AppointmentController {
     private AppointmentService appointmentService;
 
     @GetMapping("/patient/{patientId}")
-    public List<PatientDTO> getAppointmentByPatient(@PathVariable Long patientId){
+    public List<AppointmentDTO> getAppointmentByPatient(@PathVariable Long patientId){
         return appointmentService.getAllAppointmentsByPatientId(patientId);
     }
 
@@ -28,7 +27,7 @@ public class AppointmentController {
  // TO UPDATE LATER
 //    @GetMapping("/{appointmentId}")
 //    public Optional<AppointmentDTO> getAppointmentById(@PathVariable Long TBDId){
-//        return appointmenService.getRequestById(TBDId);
+//        return appointmentService.getRequestById(TBDId);
 //    }
 
     @PostMapping("/patient/{patientId}")
@@ -37,7 +36,7 @@ public class AppointmentController {
     }
 
     @DeleteMapping("/{appointmentId}")
-    public void deleteAppointmentById(@PathVariable Long requestId){ appointmentService.deleteAppointmentById(appointmentId);
+    public void deleteAppointmentById(@PathVariable Long appointmentId){ appointmentService.deleteAppointmentById(appointmentId);
     }
 
     @PutMapping("/{appointmentId}")
@@ -46,6 +45,6 @@ public class AppointmentController {
     }
 
     @PutMapping
-    public void updateAppointment(@RequestBody AppointmentDTO requestDto){ appointmentService.updateAppointmentById(appointmentDto);
+    public void updateAppointment(@RequestBody AppointmentDTO appointmentDto){ appointmentService.updateAppointmentById(appointmentDto);
     }
 }
