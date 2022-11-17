@@ -25,6 +25,7 @@ public class AppointmentController {
         return appointmentService.getAllAppointmentsByDoctorId(doctorId);
     }
 
+ // TO UPDATE LATER
 //    @GetMapping("/{appointmentId}")
 //    public Optional<AppointmentDTO> getAppointmentById(@PathVariable Long TBDId){
 //        return appointmenService.getRequestById(TBDId);
