@@ -24,7 +24,7 @@ public class AppointmentServiceImpl implements com.healthportal.services.Appoint
     private AppointmentRepository appointmentRepository;
 
     @Override
-    public List<AppointmentDTO> getAllRequestsByPatientId(Long patientId){
+    public List<AppointmentDTO> getAllAppointmentsByPatientId(Long patientId){
         Optional<Patient> patientOptional = patientRepository.findById(patientId);
         if (patientOptional.isPresent()){
             List<Appointment> appointmentList = appointmentRepository.findAllByPatientEquals(patientOptional.get());
@@ -34,7 +34,7 @@ public class AppointmentServiceImpl implements com.healthportal.services.Appoint
     }
 
     @Override
-    public List<AppointmentDTO> getAllRequestsByDoctorId(Long doctorId){
+    public List<AppointmentDTO> getAllAppointmentsByDoctorId(Long doctorId){
         Optional<Doctor> doctorOptional = doctorRepository.findById(doctorId);
         if (doctorOptional.isPresent()){
             List<Appointment> appointmentList = appointmentRepository.findAllByDoctorEquals(doctorOptional.get());

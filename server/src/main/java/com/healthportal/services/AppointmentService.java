@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AppointmentService {
-    List<AppointmentDTO> getAllRequestsByPatientId(Long patientId);
+    List<AppointmentDTO> getAllAppointmentsByPatientId(Long patientId);
 
-    List<AppointmentDTO> getAllRequestsByDoctorId(Long doctorId);
+    List<AppointmentDTO> getAllAppointmentsByDoctorId(Long doctorId);
 
     @Transactional
     void addAppointment(AppointmentDTO appointmentDto, Long patientId);
