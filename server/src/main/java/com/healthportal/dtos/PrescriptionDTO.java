@@ -21,6 +21,7 @@ public class PrescriptionDTO {
     private Doctor doctor;
     private Patient patient;
     private String pharmacyName;
+    private String drugName;
     private java.sql.Date rStartDate;
     private java.sql.Date rRefillDate;
     private Integer numberRefills;
@@ -38,6 +39,9 @@ public class PrescriptionDTO {
         }
         if (prescription.getPharmacyName() != null) {
             this.pharmacyName = prescription.getPharmacyName();
+        }
+        if (prescription.getDrugName() != null) {
+            this.drugName = prescription.getDrugName();
         }
         if (prescription.getRStartDate() != null) {
             this.rStartDate = prescription.getRStartDate();

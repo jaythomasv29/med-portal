@@ -35,6 +35,9 @@ public class Prescription {
     private String pharmacyName;
 
     @Column
+    private String drugName;
+
+    @Column
     private java.sql.Date rStartDate;
 
     @Column
@@ -51,6 +54,10 @@ public class Prescription {
 
         if (prescriptionDto.getPharmacyName() != null){
             this.pharmacyName = prescriptionDto.getPharmacyName();
+        }
+
+        if (prescriptionDto.getDrugName() != null){
+            this.drugName = prescriptionDto.getDrugName();
         }
 
         if (prescriptionDto.getRStartDate() != null){

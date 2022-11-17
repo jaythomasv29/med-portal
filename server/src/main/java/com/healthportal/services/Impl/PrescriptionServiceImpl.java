@@ -93,6 +93,7 @@ public class PrescriptionServiceImpl implements com.healthportal.services.Prescr
         prescriptionOptional.ifPresent(prescription -> {
 
             prescription.setPharmacyName(prescriptionDto.getPharmacyName());
+            prescription.setDrugName(prescriptionDto.getDrugName());
             prescription.setRStartDate(prescriptionDto.getRStartDate());
             prescription.setRRefillDate(prescriptionDto.getRRefillDate());
             prescription.setNumberRefills(prescriptionDto.getNumberRefills());
