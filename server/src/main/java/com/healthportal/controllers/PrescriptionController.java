@@ -24,11 +24,10 @@ public class PrescriptionController {
         return prescriptionService.getAllPrescriptionsByPatientId(patientId);
     }
 
-    //note ID need to be corrected
-//    @GetMapping("/{prescriptionId}")
-//    public Optional<PrescriptionDTO> getPrescriptionById(@PathVariable Long TBDId){
-//        return prescriptionService.getPrescriptionById(TBDId);
-//    }
+    @GetMapping("/{prescriptionId}")
+    public Optional<PrescriptionDTO> getPrescriptionById(@PathVariable Long prescriptionId){
+        return prescriptionService.getPrescriptionById(prescriptionId);
+    }
 
     @PostMapping("/patient/{patientId}")
     public void addPrescription(@RequestBody PrescriptionDTO prescriptionDto,@PathVariable Long patientId) {

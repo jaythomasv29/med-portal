@@ -24,11 +24,10 @@ public class AppointmentController {
         return appointmentService.getAllAppointmentsByDoctorId(doctorId);
     }
 
- // TO UPDATE LATER
-//    @GetMapping("/{appointmentId}")
-//    public Optional<AppointmentDTO> getAppointmentById(@PathVariable Long TBDId){
-//        return appointmentService.getRequestById(TBDId);
-//    }
+    @GetMapping("/{appointmentId}")
+    public Optional<AppointmentDTO> getAppointmentById(@PathVariable Long appointmentId){
+        return appointmentService.getAppointmentById(appointmentId);
+    }
 
     @PostMapping("/patient/{patientId}")
     public void addAppointment(@RequestBody AppointmentDTO appointmentDto,@PathVariable Long patientId) {
